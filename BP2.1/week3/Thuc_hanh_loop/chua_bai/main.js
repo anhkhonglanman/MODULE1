@@ -24,27 +24,26 @@
 //  }
 
 // SNT
-// function checkSNT(number) {
-//  let demsouoc = 0;
-//  if (number < 2) {
-//   return false
-//  }
-//  for (let i = 1 ; i <= number; i++) {
-//   if(number % i === 0) {
-//    demsouoc++
-//   }
-//  }
-//  if (demsouoc === 2) {
-//   return true
-//  }
-// }
-//
-// let number = +prompt('nhap so');
-// let count = 0;
-// for (let i = 2; count < number; i++) {
-//  if(checkSNT(i)) {
-//    count++;
-//    document.write(`So nguyen to thu ${count} la ${i} <br>`)
-//  }
-// }
+function checkSNT(number) {
+ let demsouoc = 0;
+ if (number < 2) {
+  return false
+ }
+ for (let i = 1 ; i <= number; i++) {
+  if(number % i === 0) {
+   demsouoc++
+  }
+ }
+ if (demsouoc === 2) {
+  return true
+ }
+}
+let number = +prompt('nhap so');
+let count = 0;
+for (let i = 2; count < number; i++) {
+ if(checkSNT(i)) {
+   count++;
+   document.write(`So nguyen to thu ${count} la ${i} <br>`)
+ }
+}
 
